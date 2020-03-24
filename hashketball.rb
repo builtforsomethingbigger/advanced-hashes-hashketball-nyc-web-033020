@@ -172,7 +172,7 @@ end
 def player_stats(player_name)
     game_hash.each do |origin, team|
       stats = team[:players][player_name]
-      if stats # If not empty. Why does this have to be checked? If this line is commented out I get nil.
+      if stats
           return stats
       end
     end
